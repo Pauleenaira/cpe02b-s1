@@ -1,57 +1,77 @@
-.header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* Styles for the navigation menu */
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  
-  .nav li {
-    list-style: none;
-    margin-right: 15px;
-  }
-  
-  /* Styles for the main content */
-  .main-content {
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 20px;
-  }
-  
-  /* Styles for the footer section */
-  .footer {
-    background-color: #f4f4f4;
-    padding: 15px;
-    text-align: center;
-  }
+p {
+  color: green;
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+}
 
-  p {
-    font-size: 16px;
-    font-family: "Roboto", Arial, sans-serif;
-    color: blue;
-    }
+#header {
+  font-size: 24px;
+  color: green;
+}
 
-    h1 {
-        font-size: 36px;
-    }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
-    .button {
-        background-color: blue;
-        color: white;
-      }
+.nav li {
+  list-style: none;
+  margin-right: 15px;
+}
 
-      [data-highlight] {
-        background-color: yellow;
-      }
+.main-content {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+}
 
-      .parent {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        border: 1px solid black;
-        padding: 10px;
-      }
+h1 {
+  font-size: 36px;
+  color: green;
+}
+
+h1, p {
+  font-size: 18px;
+  color: blue;
+}
+
+h1 {
+  color: #40513B;
+}
+
+h2 {
+  color: #628141;
+}
+
+p {
+  color: #656D3F;
+}
+
+.button {
+  background-color: #F39EB6;
+  color: white;
+}
+
+[class*="button"] {
+  border: 3px solid black;
+}
+
+[data-highlight="true"] {
+  background-color: #F1E2E2;
+}
+
+[href^="https://"] {
+  color: blue;
+}
+
+[src$=".png"] {
+  border: 5px solid black;
+}
+
+.parent {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 10px solid #6E5034;
+  padding: 10px;
+}
