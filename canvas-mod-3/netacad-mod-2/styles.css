@@ -1,3 +1,4 @@
+
 h1 {
     color: rgb(0, 128, 0); /* Dark Green using RGB */
   }
@@ -12,4 +13,32 @@ h1 {
   
   a {
     color: pink; /* Pink color using named color */
+  }
+
+  .box {
+    border-style: solid;
+    border-color: lightblue;
+  }
+
+  .button {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    background-color: lightblue;
+  }
+  
+  .input-field {
+    outline-color: #007BFF;
+  }
+
+  .header {
+    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
   }
