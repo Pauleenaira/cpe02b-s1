@@ -1,38 +1,106 @@
+.container {
+    overflow: hidden; /* This clears the floats internally */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .float-left {
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 img {
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
 }
 
-div {
+.box {
     float: left;
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
 }
 
+
+.column {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+.large  { width: 50%; }
+.medium { width: 30%; }
+.small  { width: 20%; }
+
+.column:not(.large):not(.medium):not(.small) {
+    width: 50%;
+}
+
+.grid-item {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid white;
+}
+
+.navbar {
+    background-color: lightblue;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    float: left;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: lightgrey;
+}
+
+/* --- Testimonials --- */
 .testimonial-section {
-    overflow: hidden; /* Clear the floats */
+    overflow: hidden;
+    padding: 20px;
 }
 
 .testimonial {
     float: left;
-    width: 33.333%; /* 3 testimonials per row */
+    width: 30%; 
     padding: 20px;
     box-sizing: border-box;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    margin: 10px;
+    margin: 1.5%;
     box-shadow: 2px 2px 5px #aaa;
 }
 
-.testimonial p {
-    font-style: italic;
-}
-
+.testimonial p { font-style: italic; }
 .testimonial h4 {
     font-weight: normal;
     text-align: right;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .column, .grid-item, .testimonial {
+        width: 100% !important;
+        float: none;
+        margin: 10px 0;
+    }
 }
