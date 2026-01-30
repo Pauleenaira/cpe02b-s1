@@ -1,44 +1,72 @@
+body {
+  background-color: lightblue;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
 
-h1 {
-    color: rgb(0, 128, 0); /* Dark Green using RGB */
-  }
-  
-  p {
-    color: #FF5733; /* Bright Orange using HEX */
-  }
-  
-  .vivid {
-    color: hsl(210, 100%, 50%); /* Vivid Blue using HSL */
-  }
-  
-  a {
-    color: pink; /* Pink color using named color */
-  }
+.header {
+  background-image: linear-gradient(to bottom, #ff9900, #ffcc00), 
+                    url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 300px;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
 
-  .box {
-    border-style: solid;
-    border-color: lightblue;
-  }
+h1 { font-size: 32px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.title { text-transform: uppercase; text-align: center; }
+.vivid { color: hsl(210, 100%, 50%); }
+.highlight { text-decoration: overline; color: red; }
+.spacing { letter-spacing: 1px; word-spacing: 4px; }
 
-  .button {
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-  }
+.content { padding: 20px; }
 
-  body {
-    background-color: lightblue;
-  }
-  
-  .input-field {
-    outline-color: #007BFF;
-  }
+.box {
+  width: 80%;
+  max-width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  overflow: scroll;
+  background-color: white;
+  padding: 15px;
+}
 
-  .header {
-    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 500px;
-    text-align: center;
-    color: white;
-    padding-top: 100px;
-  }
+.button {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.input-field { outline-color: #007BFF; padding: 5px; }
+
+.custom-bullet-list { list-style-type: circle; list-style-position: inside; }
+.custom-number-list { list-style-type: lower-alpha; }
+.spaced-list { list-style-type: none; padding: 0; }
+.spaced-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+a:link { color: pink; text-decoration: none; }
+a:hover { background-color: black; color: white; }
+a:active { font-weight: bold; }
+
+img.box-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  filter: grayscale(20%);
+  border: 2px solid #000;
+}
+
+.box-layer {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
