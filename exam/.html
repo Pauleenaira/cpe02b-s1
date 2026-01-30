@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health Check Survey</title>
+</head>
+<body style="background-color: #F4E9D7; font-family: sans-serif; color: #333;">
+    <form action="#" method="survey-form">
+    <center>
+        <h1 style="color: #957C62;">Mental Health Check Survey</h1>
+        <p style="color: #957C62;">Please fill out the form below to see how we can assess you 👩‍⚕️ </p>
+    </center>
+
+    <hr style="border: 1px solid #E2B59A;">
+
+    <form action="#" method="post">
+        <fieldset style="border: 2px solid #E2B59A; padding: 15px; background-color: white;">
+            <legend style="color: #957C62; font-weight: bold; padding: 0 10px;">User Information Details 🕵️</legend>
+            
+            <label>Username:</label><br>
+            <input type="text" name="fname" placeholder="Enter your name" required>
+            <br><br>
+
+            <label>Age: </label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="1 to 100">
+            <br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email" name="email" placeholder="email@example.com" required>
+        </fieldset>
+
+        <br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">Whats your current employment status?</label>
+        <br>
+        <select name="status">
+            <option value="none">--Select an Option--</option>
+            <option value="student">Student</option>
+            <option value="fulltime">Full-Time Job</option>
+            <option value="parttime">Part-Time Job</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">How are you feeling right now?</label>
+        <br>
+        <input type="radio" name="refer" value="good"> I'm good
+        <input type="radio" name="refer" value="bad"> I feel down
+        <input type="radio" name="refer" value="maybe"> So-so
+
+        <br><br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">Did something bad happen bad recently, that made you want to reach out to us?</label>
+        <br>
+        <input type="radio" name="refer" value="yes"> Yes
+        <input type="radio" name="refer" value="no"> No
+
+        <br><br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">How would you rate your overall mental health and well-being??</label>
+        <br>
+        <input type="radio" name="refer" value="yes"> Particularly good
+        <input type="radio" name="refer" value="no"> On the bad side
+        <input type="radio" name="refer" value="maybe"> On the normal side
+
+        <br><br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">Can you identify specific factors or situations that contribute most to your current stress levels? (Check all that apply)</label>
+        <br>
+        <input type="checkbox" name="level" value="school"> Schoolworks
+        <br>
+        <input type="checkbox" name="level" value="house"> House
+        <br>
+        <input type="checkbox" name="level" value="recit"> Recitations
+        <br>
+        <input type="checkbox" name="level" value="presentation"> Presentations
+        <br>
+        <input type="checkbox" name="level" value="environment"> Environment
+
+        <br><br>
+
+        <label style="background-color: #F7F4EA; padding: 2px 5px;">Do you have any other comments, suggestions or feedbacks to how we can help you better?</label>
+        <br>
+        <textarea name="feedback" rows="5" cols="40" placeholder="Write here..." style="border: 1px solid #bdc3c7;"></textarea>
+
+        <br><br>
+        
+    <center>
+        <input type="submit" value="Submit Survey" style="background-color: #27ae60; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+    </center>    
+    </form>
+
+</body>
+</html>
