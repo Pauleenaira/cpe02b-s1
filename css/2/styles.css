@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* This pushes everything down so it doesn't hide behind the fixed header */
+    padding-top: 220px; 
+    background-color: #f0f0f0;
+}
+
+header {
+    background: url('https://via.placeholder.com/800x200') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps the header on top of everything else */
+    color: white;
+    padding: 40px 0;
+}
+
+/* Updated main container to match your 'bigger' request */
+main {
+    background-color: #ffffff;
+    width: 90%; 
+    max-width: 1200px;
+    padding: 40px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.product-image {
+    position: relative;
+}
+
+/* This makes sure the rose image fits nicely in the box */
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
