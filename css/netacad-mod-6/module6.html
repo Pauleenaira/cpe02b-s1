@@ -3,63 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Showcase</title>
+    <title>Lavender Dream Launch</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('header').classList.add('visible');
+    });
+    </script>
 </head>
 <body>
     <header>
-        <h1>Our Products</h1>
+        <h1>Introducing the "Lavender Bouquet!" </h1>
     </header>
     <main>
-        <div class="product">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1559563458-527698bf5295?q=80&w=300&h=300&fit=crop" alt="Eternal Red Rose">
-                <span class="badge">Top Seller</span>
-            </div>
-            <div class="product-details">
-                <h2>Eternal Velvet Rose</h2>
-                <p>A premium, deep-red blossom hand-picked at peak bloom. It is treated with a specialized preservation process to maintain its vibrant color and soft texture for over a year.</p>
-            </div>
-        </div>
-
-        <table class="product-specs">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Flower Type</td>
-                    <td>Preserved Grade-A Rose</td>
-                </tr>
-                <tr>
-                    <td>Color</td>
-                    <td>Midnight Crimson</td>
-                </tr>
-                <tr>
-                    <td>Lifespan</td>
-                    <td>12+ Months (No Water Needed)</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="contact-form">
-            <form>
-                <fieldset>
-                    <legend>Contact Us</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-        </div>
+        <section class="product-intro">
+            <img src="D:\cpe02b-s1\css\netacad-mod-5\Lilac_bouquet.jpg" alt="Lavender Dream Bouquet" class="product-image">
+            <button class="buy-now">Order Now!</button>
+        </section>
+        <section class="features">
+            <h2>Bouquet Highlights</h2>
+            <ul>
+                <li class="feature-item">Freshly picked Lilacs & Scabiosa</li>
+                <li class="feature-item">Signature Hand-tied Ribbon</li>
+                <li class="feature-item">Smell that lasts for weeks</li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>© 2026 Online Store</p>
+        <p>© 2026 Aira's Flower Shop</p>
     </footer>
 </body>
 </html>
