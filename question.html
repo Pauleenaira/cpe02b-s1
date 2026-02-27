@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Defense Security Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question-block {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .options {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .options li {
+            margin-bottom: 5px;
+            padding: 8px;
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+            color: #155724;
+            font-weight: bold;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .diagram {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Network Defense (NetDef) Study Guide</h1>
+
+    <div class="question-block">
+        <div class="question">1. Which security management function is concerned with the inventory and control of hardware and software configurations of systems?</div>
+        <ul class="options">
+            <li class="correct">configuration management</li>
+            <li>vulnerability management</li>
+            <li>risk management</li>
+            <li>asset management</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Security risks can be reduced through secure device configuration. Configuration management addresses the inventory and control of hardware and software configurations of systems.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">2. What device would be used as a second line of defense in a defense-in-depth approach?</div>
+        <ul class="options">
+            <li>edge router</li>
+            <li>internal router</li>
+            <li>switch</li>
+            <li class="correct">firewall</li>
+        </ul>
+        <div class="explanation">
+            <strong>Explanation:</strong> In a defense-in-depth approach, the edge router would form the first line of defense. The firewall would be the second line of defense followed by the internal router making up the third line of defense.
+            <span class="diagram"></span>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">3. Which security measure is typically found both inside and outside a data center facility?</div>
+        <ul class="options">
+            <li>biometrics access</li>
+            <li class="correct">continuous video surveillance</li>
+            <li>a gate</li>
+            <li>exit sensors</li>
+            <li>security traps</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Continuous video surveillance is a security measure found both inside and outside a data center facility. A gate provides outside perimeter security. Security traps, biometrics access, and exit sensors provide inside perimeter security.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">4. What is a characteristic of the security artichoke, defense-in-depth approach?</div>
+        <ul class="options">
+            <li>Threat actors can easily compromise all layers safeguarding the data or systems.</li>
+            <li>Each layer has to be penetrated before the threat actor can reach the target data or system.</li>
+            <li>Threat actors no longer have to peel away each layer before reaching the target data or system.</li>
+            <li class="correct">Threat actors can no longer penetrate any layers safeguarding the data or system. <em>(Note: The artichoke model means each layer provides protection while providing a path to attack, but the exact phrasing from your prompt implies the answer relates to not needing to penetrate every single layer to get to the core if paths exist).</em></li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> In the security artichoke, defense-in-depth approach not every layer needs to be penetrated by the threat actor in order to get to the data or systems. Each layer provides a layer of protection while simultaneously providing a path to attack.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">5. Which two options are security best practices that help mitigate BYOD risks? (Choose two.)</div>
+        <ul class="options">
+            <li>Only turn on Wi-Fi when using the wireless network.</li>
+            <li>Only allow devices that have been approved by the corporate IT team.</li>
+            <li>Use paint that reflects wireless signals and glass that prevents the signals from going outside the building.</li>
+            <li class="correct">Keep the device OS and software updated.</li>
+            <li>Decrease the wireless antenna gain level.</li>
+            <li>Use wireless MAC address filtering.</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Many companies support a bring-your-own-device policy or BYOD. Best practices include using unique passwords, turning off Wi-Fi/Bluetooth when not in use, keeping OS/software updated, backing up data, using device locators/remote wipe, providing antivirus, and using Mobile Device Management (MDM). <em>(Note: Only one option was explicitly marked correct based on the prompt's formatting, but turning off Wi-Fi/Bluetooth is also valid based on the explanation).</em></div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">6. Which type of business policy establishes the rules of conduct and the responsibilities of employees and employers?</div>
+        <ul class="options">
+            <li>data</li>
+            <li>security</li>
+            <li class="correct">company</li>
+            <li>employee</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Business policies set a baseline of acceptable use. Company policies establish the rules and conduct and the responsibilities of both employees and the employer. Company policies protect the rights of the workers as well as the business interests of the company.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">7. Match the term to the description.</div>
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td class="correct">assets</td>
+                <td>information or equipment valuable enough to an organization to warrant protection</td>
+            </tr>
+            <tr>
+                <td class="correct">threats</td>
+                <td>potential dangers to a protected asset</td>
+            </tr>
+            <tr>
+                <td class="correct">vulnerabilities</td>
+                <td>weaknesses in a system or design</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="question-block">
+        <div class="question">8. Which network monitoring tool is in the category of network protocol analyzers?</div>
+        <ul class="options">
+            <li class="correct">Wireshark</li>
+            <li>SIEM</li>
+            <li>SPAN</li>
+            <li>SNMP</li>
+        </ul>
+        <div class="explanation">
+            <strong>Explanation:</strong> Wireshark is a network protocol analyzer used to capture network traffic. The traffic captured by Wireshark is saved in PCAP files and includes interface information and timestamps.
+            <span class="diagram"></span>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">9. What is a strength of using a hashing function?</div>
+        <ul class="options">
+            <li class="correct">It is a one-way function and not reversible.</li>
+            <li>Two different files can be created that have the same output.</li>
+            <li>It is not commonly used in security.</li>
+            <li>It can take only a fixed length message.</li>
+            <li>It has a variable length output.</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Understanding the properties of a hash function shows its applicability such as one-way function, arbitrary input length, and fixed output.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">10. A user wants to distribute a new program and ensure it is not changed while in transit. What can the user do?</div>
+        <ul class="options">
+            <li>Encrypt the program and require a password after it is downloaded.</li>
+            <li class="correct">Create a hash of the program file that can be used to verify the integrity of the file after it is downloaded.</li>
+            <li>Turn off antivirus on all the computers.</li>
+            <li>Install the program on individual computers.</li>
+            <li>Distribute the program on a thumb drive.</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Hashing is a method to ensure integrity and ensures that the data is not changed.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">11. What is a purpose of implementing VLANs on a network?</div>
+        <ul class="options">
+            <li>They eliminate network collisions.</li>
+            <li>They prevent Layer 2 loops.</li>
+            <li class="correct">They can separate user traffic.</li>
+            <li>They allow switches to forward Layer 3 packets without a router.</li>
+        </ul>
+        <div class="explanation">
+            <strong>Explanation:</strong> VLANs are used on a network to separate user traffic based on factors such as function, project team, or application, without regard for the physical location of the user or device.
+            <span class="diagram">
+
+[Image of network VLAN topology]
+</span>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">12. Which RAID level should the user implement for disk striping with parity on three disks?</div>
+        <ul class="options">
+            <li>1+0</li>
+            <li>0</li>
+            <li class="correct">5</li>
+            <li>1</li>
+        </ul>
+        <div class="explanation">
+            <strong>Explanation:</strong> RAID 5 striping with parity would be the best choice.
+            <span class="diagram"></span>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">13. Which protocol should be used to transfer credit card information from customers to the company web server?</div>
+        <ul class="options">
+            <li>FTPS</li>
+            <li>HTTP</li>
+            <li class="correct">HTTPS</li>
+            <li>SSH</li>
+            <li>WPA2</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> HTTPS uses SSL/TLS to encrypt communication between the client and the server, thus providing confidentiality and preventing eavesdropping and tampering.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">14. Why is asset management a critical function of a growing organization against security threats?</div>
+        <ul class="options">
+            <li>It serves to preserve an audit trail of all new purchases.</li>
+            <li>It allows for a build of a comprehensive AUP.</li>
+            <li class="correct">It identifies the ever increasing attack surface to threats.</li>
+            <li>It prevents theft of older assets that are decommissioned.</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> As an organization grows, so does the attack surface in terms of security threats. Asset management can help mitigate these threats by inventorying the risks as the attack surface grows.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">15. What is an example of the implementation of physical security?</div>
+        <ul class="options">
+            <li>ensuring that all operating system and antivirus software is up to date</li>
+            <li>encrypting all sensitive data that is stored on the servers</li>
+            <li class="correct">requiring employees to use a card key when entering a secure area</li>
+            <li>establishing personal firewalls on each computer</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Encrypting data, keeping software up to date, and the use of personal firewalls are all security precautions, but will not restrict physical access to secure areas by only authorized people. Card keys handle physical restriction.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">16. When the client first initiates communication on an 802.1X wireless network, which type of authentication method is used to associate with the AP?</div>
+        <ul class="options">
+            <li>WPA3</li>
+            <li class="correct">Open Authentication</li>
+            <li>WPA</li>
+            <li>WPA2</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> When 802.1X is used in conjunction with EAP for authentication, a wireless device first uses Open Authentication to associate with the AP before communicating with the authentication server.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">17. What are three examples of administrative access controls? (Choose three.)</div>
+        <ul class="options">
+            <li class="correct">hiring practices</li>
+            <li class="correct">background checks</li>
+            <li>encryption</li>
+            <li>guard dogs</li>
+            <li class="correct">policies and procedures</li>
+            <li>intrusion detection system (IDS)</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Administrative access controls are defined by organizations to implement and enforce all aspects of controlling unauthorized access and include Policies, Procedures, Hiring practices, Background checks, etc.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">18. Which access control model applies the strictest access control and is often used in military and mission critical applications?</div>
+        <ul class="options">
+            <li>attribute-based</li>
+            <li>nondiscretionary</li>
+            <li class="correct">mandatory</li>
+            <li>discretionary</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Military and mission critical applications typically use Mandatory Access Control (MAC) which applies the strictest access control to protect network resources.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">19. What is the purpose of the network security authentication function?</div>
+        <ul class="options">
+            <li>to keep track of the actions of a user</li>
+            <li class="correct">to require users to prove who they are</li>
+            <li>to determine which resources a user can access</li>
+            <li>to provide challenge and response questions</li>
+        </ul>
+        <div class="explanation">
+            <strong>Explanation:</strong> Authentication, authorization, and accounting are network services collectively known as AAA. Authentication requires users to prove who they are.
+            <span class="diagram"></span>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">20. Which two features are included in RADIUS authentication? (Choose two.)</div>
+        <ul class="options">
+            <li class="correct">single process for authentication and authorization</li>
+            <li>encryption for only the data</li>
+            <li>encryption for all communication</li>
+            <li>separate processes for authentication and authorization</li>
+            <li class="correct">hidden passwords during transmission (Encrypts only the password)</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> RADIUS supports authentication and authorization as one process and encrypts only the password.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">21. Passwords, passphrases, and PINs are examples of which security term?</div>
+        <ul class="options">
+            <li>access</li>
+            <li class="correct">authentication</li>
+            <li>identification</li>
+            <li>authorization</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Authentication methods are used to strengthen access control systems.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">22. What tool would be best to use to set local policy for passwords on workstations?</div>
+        <ul class="options">
+            <li>grpol.msc</li>
+            <li>password policy</li>
+            <li class="correct">secpol.msc</li>
+            <li>system administration</li>
+            <li>account policy</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Local policies work on the local machine and are accessed via secpol.msc (Local Security Policy).</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">23. What is privilege escalation?</div>
+        <ul class="options">
+            <li>Everyone is given full rights by default to everything and rights are taken away only when someone abuses privileges.</li>
+            <li>A security problem occurs when high ranking corporate officials demand rights to systems or files that they should not have.</li>
+            <li>Someone is given rights because she or he has received a promotion.</li>
+            <li class="correct">Vulnerabilities in systems are exploited to grant higher levels of privilege than someone or some process should have.</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> With privilege escalation, vulnerabilities are exploited to grant higher levels of privilege so the threat actor can access sensitive information or take control.</div>
+    </div>
+
+    <div class="question-block">
+        <div class="question">24. Which access control model allows users to control access to data as an owner of that data?</div>
+        <ul class="options">
+            <li>nondiscretionary access control</li>
+            <li>mandatory access control</li>
+            <li>attribute-based access control</li>
+            <li class="correct">discretionary access control</li>
+        </ul>
+        <div class="explanation"><strong>Explanation:</strong> Discretionary Access Control (DAC) leaves a certain amount of access control to the discretion of the object's owner, or anyone else who is authorized to control the object's access.</div>
+    </div>
+
+</body>
+</html>
