@@ -8,7 +8,6 @@ function power(base, exp) {
   return memo[key];
 }
 
-
 // Test Code
 console.log(power(2, 5));
 console.log(power(2, -2));

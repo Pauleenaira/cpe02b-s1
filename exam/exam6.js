@@ -9,7 +9,6 @@ function firstUniqueChar(str) {
     }
     return null;
   }
-  
 
 //Test Code
 console.log(firstUniqueChar('sTreSS'));
