@@ -59,3 +59,9 @@ class WeatherDashboard { #cities;
     await dashboard.syncData(mockWeatherFetch); console.log('Hottest city is:', dashboard.getHottestCity());
     })();
     
+
+    let x = [100, 101, 102, 103];
+    let result = x.reduce((e, p) => e + p, 1000);
+    console.log(result);
+    
+    
