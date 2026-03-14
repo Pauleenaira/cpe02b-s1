@@ -1,59 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light gray using HEX value */
-}
-
-header {
-    background-image: url('https://edube.org/uploads/media/default/0001/04/portfolio.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: cmyk(0, 100, 100, 0); /* Red using CMYK value */
-    padding: 20px;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fffde7; 
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    color: rgb(0, 128, 0); /* Green using RGB value */
+  color: rgb(255, 255, 255); 
+  font-size: 36px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    color: hsl(210, 100%, 50%); /* Blue using HSL value */
-    font-style: italic;
-    text-decoration: underline;
+  color: hsl(280, 50%, 50%); 
+  font-style: italic;
+  text-decoration: underline;
+}
+
+header {
+  background-color: cmyk(0, 60, 0, 20); 
+  background-image: url('https://horticulture.co.uk/wp-content/uploads/2022/09/osteospermumpropagating-header-1600x1065.jpg');
+  background-repeat: no-repeat;   
+  background-position: center;    
+  background-size: cover;      
+  padding: 50px 20px;
+  text-align: center;
 }
 
 main {
-    background: linear-gradient(to bottom, lightblue, white);
+  background: linear-gradient(to bottom, #fffde7, #ffffff);
 }
 
 section {
-    margin: 20px;
+  margin: 20px;
+}
+
+p {
+  font-size: 18px;
 }
 
 ul {
-    list-style-type: square;
+  list-style-type: square; 
 }
 
 li {
-    line-height: 1.6;
-    padding-left: 10px;
+  line-height: 1.6;      
+  padding-left: 10px;     
 }
 
 a:link {
-    color: darkblue;
+  color: hsl(280, 50%, 50%); 
 }
 
 a:visited {
-    color: purple;
+  color: purple;
 }
 
 a:hover {
-    color: red;
+  color: #a83298;         
 }
 
 img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px gray;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+footer {
+  padding: 20px;
+  text-align: left;
+}
+
+footer p {
+  color: hsl(280, 50%, 50%); 
+  font-style: italic;
+  font-size: 16px;
 }
