@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fffde7; 
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #a855cc; 
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid #d4a800; 
+}
+section {
+  margin: 20px;
+}
+
+footer {
+  background-color: #a855cc; 
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex-shrink: 0;
+  margin: 20px 20px 20px 0;
+}
+
+.image-content img {
+  width: 420px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+h2 {
+  color: black;
+}
+
+.highlight {
+  background-color: orange;
+  color: white;
+  padding: 4px;
+}
+
+#header {
+  border-bottom: 4px solid #d4a800;
+}
+
+a[href^="mailto:"] {
+  color: #d4a800;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+header + main {
+  border-top: 1px solid gray;
+}
+
+
+h1 {
+  color: white !important;
+}
+
+p {
+  color: slategray;
+}
+
+p {
+  color: red;
+}
+
+footer p {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+#header h1 {
+  color: white !important;
+}
