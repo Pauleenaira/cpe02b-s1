@@ -8,13 +8,13 @@ body {
 
 header {
   background-image: url('https://horticulture.co.uk/wp-content/uploads/2022/09/osteospermumpropagating-header-1600x1065.jpg'); 
-  background-repeat: no-repeat;  
-  background-position: center;    
-  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-position: center;   
+  background-size: cover;       
   background-color: #a855cc;    
   padding: 40px 20px;
-  text-align: center;             
-  position: fixed;               
+  text-align: center;           
+  position: fixed;              
   top: 0;
   width: 100%;
   z-index: 100;
@@ -50,19 +50,19 @@ footer p {
 }
 
 .product {
-  width: 300px;                             
-  padding: 20px;                           
-  border: 2px solid #1a1a2e;                
+  width: 300px;                    
+  padding: 20px;                          
+  border: 2px solid #1a1a2e;              
   margin: 20px;                              
   background-color: #f9f9f9;                
   box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
-  overflow: hidden;                         
+  overflow: hidden;                          
   border-radius: 12px;
 }
 
 .product-image {
   position: relative;                       
-  background-color: #1a1a2e;          
+  background-color: #1a1a2e;                
   border-radius: 10px;
   overflow: hidden;
 }
@@ -74,7 +74,7 @@ footer p {
 }
 
 .badge {
-  position: absolute;                       
+  position: absolute;                   
   top: 10px;
   left: 10px;
   background-color: red;
@@ -108,13 +108,14 @@ footer p {
 }
 
 .product-details {
-  visibility: hidden;                     
+  visibility: hidden;                       
 }
 
 .contact-form {
-  display: none;                            
+  display: flex;                         
   justify-content: center;
   align-items: center;
+  padding: 40px 20px 60px;
 }
 
 .product-specs {
@@ -136,11 +137,11 @@ footer p {
 }
 
 .product-specs tr:nth-child(even) {
-  background-color: #f2f2f2;              
+  background-color: #f2f2f2;             
 }
 
 .product-specs tr:nth-child(odd) {
-  background-color: #ffffff;            
+  background-color: #ffffff;               
 }
 
 .product-specs tr:hover {
@@ -148,41 +149,64 @@ footer p {
 }
 
 .contact-form form {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background-color: #fffde7;
+  width: 460px;
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.08);
 }
 
 .contact-form fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-form legend {
   font-weight: bold;                       
-  border-bottom: 1px solid #ccc;          
+  border-bottom: 1px solid #ccc;   
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+  color: hsl(280, 50%, 50%);        
+  width: 100%;
 }
 
 .contact-form label {
   display: block;
-  margin-top: 10px;
+  margin-top: 14px;
+  color: hsl(280, 50%, 50%);              
+  font-size: 15px;
 }
 
 .contact-form input {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: 2px solid hsl(280, 50%, 65%);   
+  border-radius: 6px;
+  background-color: #fffde7;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border-color: hsl(280, 50%, 45%);
 }
 
 .contact-form button {
-  background-color: #4CAF50;               
+  background-color: #4CAF50;        
   color: white;                            
-  padding: 10px 20px;                     
+  padding: 10px 20px;                    
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 .contact-form button:hover {
