@@ -1,59 +1,169 @@
-/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #fffde7;
+}
+
+
+header {
+  background-image: url('https://horticulture.co.uk/wp-content/uploads/2022/09/osteospermumpropagating-header-1600x1065.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #d4a800;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+  width: 90%;
+  margin: 0 auto;      
+  padding: 20px;        
+  border: 1px solid #d4a800; 
+  background-color: #fffde7;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-/* Header styles */
-header {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-    text-align: center;
-}
 
-/* Column styles */
 .column {
-    float: left;
-    width: 30%;
-    margin: 1.66%;
-    background-color: #e2e2e2;
-    padding: 10px;
+  float: left;                     
+  width: 45%;                   
+  margin: 1.66%;                    
+  background-color: #a855cc;       
+  padding: 15px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-/* Clearfix */
+.column h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.column h2 a,
+.column a {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.column h2 a:hover,
+.column a:hover {
+  color: #fffde7;
+}
+
+.column p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .column {
-        width: 100%;
-        float: none;
-        margin: 0 0 20px 0;
-    }
+.grid-item {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding: 12px;
+  font-size: 16px;
 }
 
-/* Grid styles */
+.grid-item a {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .row {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-/* Post styles */
+.post {
+  overflow: hidden;
+}
+
 .post img {
-    float: left;
-    width: 50%;
-    margin-right: 10px;
+  float: left;          
+  width: 45%;            
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.post-text {
+  overflow: hidden;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 12px;
+}
+
+.garden-banner {
+  background-color: #a855cc;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.mini-column {
+  background-color: #a855cc;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.mini-column h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.mini-column h3 a {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.mini-column p {
+  color: white;
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;          
+    float: none;         
+    margin: 0 0 20px 0;
+  }
+
+  .post img {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
 }
